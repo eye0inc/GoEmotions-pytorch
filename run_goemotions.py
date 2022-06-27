@@ -240,7 +240,7 @@ def main(cli_args):
     )
 
     # GPU or CPU
-    args.device = "cuda" if torch.cuda.is_available() and not args.no_cuda else "cpu"
+    args.device = "cuda:1" if torch.cuda.is_available() and not args.no_cuda else "cpu"
     model.to(args.device)
 
     # Load dataset
