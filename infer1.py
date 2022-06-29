@@ -3,8 +3,12 @@ from model import BertForMultiLabelClassification
 from multilabel_pipeline import MultiLabelPipeline
 from pprint import pprint
 
-tokenizer = BertTokenizer.from_pretrained("monologg/bert-base-cased-goemotions-original")
-model = BertForMultiLabelClassification.from_pretrained("monologg/bert-base-cased-goemotions-original")
+# m = "monologg/bert-base-cased-goemotions-original"
+m = "ckpt/original/bert-base-cased-goemotions-original/checkpoint-5000"
+# m = "ckpt/original/bert-base-cased-goemotions-original/checkpoint-27000"
+
+tokenizer = BertTokenizer.from_pretrained(m)
+model = BertForMultiLabelClassification.from_pretrained(m)
 
 goemotions = MultiLabelPipeline(
     model=model,
