@@ -4,7 +4,11 @@ from multilabel_pipeline import MultiLabelPipeline
 from pprint import pprint
 
 # m = "monologg/bert-base-cased-goemotions-original"
-m = "ckpt/original/bert-base-cased-goemotions-original/checkpoint-5000"
+# m = "ckpt/original/bert-base-cased-goemotions-original/checkpoint-1000"
+# m = "ckpt/original/bert-base-cased-goemotions-original/checkpoint-2000"
+# m = "ckpt/original/bert-base-cased-goemotions-original/checkpoint-3000"
+# m = "ckpt/original/bert-base-cased-goemotions-original/checkpoint-5000"
+m = "ckpt/original/bert-base-cased-goemotions-original/checkpoint-20000"
 # m = "ckpt/original/bert-base-cased-goemotions-original/checkpoint-27000"
 
 tokenizer = BertTokenizer.from_pretrained(m)
@@ -24,8 +28,8 @@ texts = [
 ]
 
 texts = [
-    "I'm furious that bitch stole my shirt, but I love her for it!",
-    "I wonder why she did it?",
+    "I'm furious that maniac stole my shirt, but I love how it looks!",
+    "I wonder why he did it?",
     "It's hard to say but I suspect the answer miight be ridiculous."
 ]
 
