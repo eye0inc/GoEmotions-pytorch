@@ -20,7 +20,9 @@ texts = [
 ]
 
 texts = [
-    "I'm furious that bitch stole my shirt, but I love her for it!"
+    "I'm furious that bitch stole my shirt, but I love her for it!",
+    "I wonder why she did it?",
+    "It's hard to say but I suspect the answer miight be ridiculous."
 ]
 
 pprint(goemotions(texts))
