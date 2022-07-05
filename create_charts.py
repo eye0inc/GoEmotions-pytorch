@@ -1,7 +1,10 @@
 import sys, os
 from pprint import pp
 #
-# clean up data
+# Training creates eval_results.txt
+# rename to eval_*_results.txt for train, dev, & test (see branch eval_test)
+#
+# This script creates plottable .csv files from eval_*_results.txt files
 #
 for dataset in "train", "dev", "test":
     data = []
